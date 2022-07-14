@@ -4,12 +4,12 @@ def rever_number(n):
     num_float = n - int(n)
 
     while num_int > 0:
-        rever = (rever_int + num_int % 10) * 10
+        rever_int = (rever_int + (num_int % 10)) * 10
         num_int //= 10
     rever_int //= 10
 
 
-    return rever
+    return rever_int
 
 number = float(input('Введите число: '))
 rever_num = rever_number(number)
